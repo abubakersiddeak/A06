@@ -31,14 +31,14 @@ function displayTrees(trees) {
   trees.forEach((tree) => {
     const card = document.createElement("div");
     card.className =
-      "bg-white rounded-lg flex flex-col gap-2 p-4 max-h-[550px]";
+      "bg-white rounded-lg flex flex-col gap-2 p-1 lg:p-4 max-h-[450px] ";
     card.innerHTML = `
       <img src="${tree.image}" alt="${tree.name}" 
            class="w-full xl:h-[200px] lg:h-[150px] md:h-[120px] h-[150px] rounded-lg">
       <button id="tree-name" class="text-xl font-bold cursor-pointer text-start">${tree.name}</button>
-      <p class="text-[12px]">${tree.description}</p>
+      <p class="lg:text-[12px] text-[9px]">${tree.description}</p>
       <div class="flex justify-between items-center">
-        <span class="bg-green-300/30 px-2 py-1 rounded-3xl text-[14px] text-green-700 font-bold">
+        <span class="bg-green-300/30 px-2 py-1 rounded-3xl lg:text-[12px] text-[9px] text-green-700 font-bold text-center">
           ${tree.category}
         </span>
         <p class="font-bold">$ ${tree.price}</p>
@@ -48,7 +48,7 @@ function displayTrees(trees) {
     // cart button
     const btn = document.createElement("button");
     btn.className =
-      "cursor-pointer bg-green-800 text-white font-bold rounded-3xl py-3 hover:scale-105 duration-750";
+      "cursor-pointer bg-green-800 text-white font-bold rounded-3xl py-3 hover:scale-105 duration-750 text-xs ";
     btn.innerText = "Add to Cart";
 
     btn.addEventListener("click", () => handleAddtoCartClick(tree));

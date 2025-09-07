@@ -39,12 +39,12 @@
 
 
     <!-- banner start -->
-    <section class="w-full  flex justify-between  bg-[#CFF0DC] items-center relative">
+    <section class="w-full  lg:flex justify-between  bg-[#CFF0DC] items-center relative px-4">
 
-        <div class="md:block hidden"><img src="assets/hero-leaf1.png" alt="" class="h-40 w-60 lg:h-90 w-130"></div>
-        <div class="flex flex-col gap-1 md:gap-2 lg:gap-4 text-center max-w-[627px] py-10">
-            <P class=" lg:text-3xl md:text-2xl xl:text-5xl font-bold">Plant a Tree, Grow a Future</P>
-            <P class="text-[10px] lg:text-lg">Join our mission to plant 1 million trees and make the Earth greener for
+        <div class="lg:block hidden"><img src="assets/hero-leaf1.png" alt="" class="h-40 w-60 lg:h-90 w-130"></div>
+        <div class="flex flex-col gap-1 md:gap-2 lg:gap-4 text-center max-w-[627px] py-10  mx-auto">
+            <P class=" lg:text-3xl text-3xl xl:text-5xl font-bold">Plant a Tree, Grow a Future</P>
+            <P class="text-lg lg:text-lg">Join our mission to plant 1 million trees and make the Earth greener for
                 future
                 generations.
             </P>
@@ -54,7 +54,7 @@
             </div>
         </div>
 
-        <div class="md:block hidden"><img src="assets/hero-leaf2.png" alt="" class="h-40 w-60 lg:h-90 w-130"></div>
+        <div class="lg:block hidden"><img src="assets/hero-leaf2.png" alt="" class="h-40 w-60 lg:h-90 w-130"></div>
     </section>
 
 
@@ -64,31 +64,21 @@
         <!-- loding spinner -->
         <span id="spinner" class="loading loading-dots loading-xl hidden"></span>
         <div class="grid grid-cols-5 w-full 2xl:gap-4 lg:gap-2">
-            <div id="catagoryContiner" class="col-span-1   p-2 flex flex-col ">
+            <div id="catagoryContiner" class="md:col-span-1 col-span-5  p-2 flex flex-col ">
                 <h1 class="font-bold text-xl mb-2">
                     Categories
                 </h1>
 
 
             </div>
-            <div id="cardContinar" class="col-span-3   p-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
-
-
-
+            <div id="cardContinar" class="md:col-span-3 col-span-5 p-2 grid  grid-cols-2 lg:grid-cols-3 gap-2">
             </div>
-            <div class="col-span-1  p-4 bg-white rounded-xl flex flex-col gap-3">
+            <div class=" md:col-span-1 col-span-5 p-4 bg-white rounded-xl md:flex flex-col gap-3">
                 <h1 class="font-bold text-xl ">
                     Your Cart
                 </h1>
                 <div id="cartDisplay" class="flex flex-col gap-2">
-                    <!-- <div class="bg-cyan-50 rounded-lg p-2 flex justify-between">
-                        <div>
-                            <p class="font-bold">Mango tree</p>
-                            <div>500</div>
-                        </div>
-                        <button class="cursor-pointer hover:scale-75 hover:rotate-90 duration-750"><img
-                                src="assets/icons8-cross-30.png" alt=""></button>
-                    </div> -->
+
 
 
                 </div>
