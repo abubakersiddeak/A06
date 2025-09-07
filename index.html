@@ -6,21 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Earth</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 
 <body class="mx-auto">
-    <header class="max-w-[1920px] w-full h-[91px] bg-[#15803D] flex justify-between items-center px-20">
+    <header class="max-w-[1920px] w-full h-[91px] bg-[#15803D] flex justify-between items-center lg:px-20 px-5">
         <div class="text-white font-bold text-xl">Green Earth</div>
-        <div class="flex justify-center items-center gap-6 text-white"><a href="#"
+        <div class="hidden md:flex justify-center items-center gap-6 text-white"><a href="#"
                 class="hover:scale-105 duration-750 hover:text-gray-200">About</a><a href="#"
                 class="hover:scale-105 duration-750 hover:text-gray-200">Gallery</a><a href="#"
                 class="hover:scale-105 duration-750 hover:text-gray-200">Plant a Tree</a></div>
-        <div class="flex justify-center items-center"> <button
+        <div class="hidden md:flex justify-center items-center"> <button
                 class="text-[#15803D] bg-[#FACC15] px-6 py-3 rounded-3xl hover:scale-105 duration-750 cursor-pointer">Plant
                 a
                 Tree</button>
         </div>
+        <div class="md:hidden">
+            <button onclick="handleManuClick()"><img src="assets/bars-solid-full.svg" alt="logo"
+                    class="h-8 w-8"></button>
+        </div>
     </header>
+    <div id="menuModal" class="w-full  flex-col  items-center z-50 hidden">
+        <a href="#" class=" bg-green-400 w-full text-center py-3 text-white font-bold">About</a><a href="#"
+            class=" bg-green-500 w-full text-center py-3 text-white font-bold">Gallery</a><a href="#"
+            class=" bg-green-600 w-full text-center py-3 text-white font-bold">Plant
+            a Tree</a>
+    </div>
     <script src="script.js"></script>
 </body>
 
